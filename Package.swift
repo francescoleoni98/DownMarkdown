@@ -22,7 +22,10 @@ let package = Package(
               "entities.inc",
               "COPYING"
             ],
-            publicHeadersPath: "./"
+            publicHeadersPath: "./",
+            cSettings: [
+              .headerSearchPath("Sources/cmark")
+            ]
         ),
         .target(
             name: "Down",

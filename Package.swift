@@ -1,14 +1,10 @@
-// swift-tools-version:5.3
+// swift-tools-version:5.9
 
 import PackageDescription
 
 let package = Package(
     name: "Down",
-    platforms: [
-        .macOS("10.11"),
-        .iOS("9.0"),
-        .tvOS("9.0")
-    ],
+    platforms: [.iOS(.v15), .macOS(.v12), .visionOS(.v1)],
     products: [
         .library(
             name: "Down",
@@ -33,10 +29,10 @@ let package = Package(
             dependencies: ["libcmark"],
             path: "Sources/Down",
             exclude: ["Down.h"],
-          resources: [
-            .copy("Resources/DownView.bundle"),
-            .copy("Resources/DownView (macOS).bundle"),
-          ]
+            resources: [
+              .copy("Resources/DownView.bundle"),
+              .copy("Resources/DownView (macOS).bundle"),
+            ]
         ),
         .testTarget(
             name: "DownTests",

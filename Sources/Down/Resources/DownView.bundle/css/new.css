@@ -1,0 +1,169 @@
+:root {
+	font-size: 10px;
+}
+
+html, body {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	color: black;
+	font-family: -apple-system;
+	font: -apple-system-body;
+	word-break: break-word;
+	overflow-wrap: break-word;
+	word-wrap: break-word; /* for old browsers */
+}
+
+/*ul li, ol li {*/
+/*	margin-left: 1.5em;*/
+/*}*/
+/**/
+/*h1 {*/
+/*	font-size: 1.5rem;*/
+/*}*/
+/**/
+/*h2 {*/
+/*	font-size: 1.3rem;*/
+/*}*/
+/**/
+/*h3 {*/
+/*	font-size: 1.1rem;*/
+/*}*/
+/**/
+/*h4, h5, h6, p, a, li, code, pre {*/
+/*	font-size: 1rem;*/
+/*}*/
+
+a {
+		text-decoration: none;
+}
+
+p, ul, ol, dl, table, pre {
+		margin: 0 0 15px;
+}
+
+ul {
+		padding-left: 25px;
+}
+
+ol {
+		padding-left: 30px;
+}
+
+ul {
+	list-style-type: "•  ";
+}
+
+h1 {
+		font-size: 1.3em;
+}
+
+h2 {
+		font-size: 1.2em;
+}
+
+h3 {
+		font-size: 1.1em;
+}
+
+h4 {
+		font-size: 1.0em;
+}
+
+h5 {
+		font-size: 1.0em;
+}
+
+h6 {
+		font-size: 1.0em;
+}
+
+h1, h2, h3, h4, h5, h6 {
+		font-weight: 600;
+		margin: 0;
+}
+
+p {
+		margin-bottom: 0px;
+}
+
+p + h1, p + h2, p + h3,
+ol + h1, ol + h2, ol + h3,
+ul + h1, ul + h2, ul + h3 {
+	margin-top: 6px;
+}
+
+h1 + p, h2 + p, h3 + p,
+h1 + ol, h2 + ol, h3 + ol,
+h1 + ul, h2 + ul, h3 + ul {
+	margin-top: 3px;
+}
+
+@media screen and (min-width: 500px) {
+	h1 {
+			font-size: 2em;
+	}
+
+	h2 {
+			font-size: 1.5em;
+	}
+
+	h3 {
+			font-size: 1.2em;
+	}
+}
+
+table {
+		table-layout: fixed;
+		border-collapse: collapse;
+		width: 100%;
+}
+
+table th, table td {
+		padding: 4px;
+}
+
+table th {
+		font-weight: normal;    /* The default is bold, but we want to use paragraph styles and formatting */
+}
+
+/* Make the styling compact inside of a table */
+table p, table h1, table h2, table h3, table h4, table h5, table h6 {
+		margin: 0;
+}
+
+li {
+		margin-bottom: 0px;
+}
+
+blockquote {
+		margin-right: 0px; /* Because nested blockquotes just keep getting narrower */
+}
+
+code {
+		overflow-x: scroll;
+		display: block;
+		background-color: rgba(125, 125, 125, 0.1);
+		padding: 4px 8px;
+		border-radius: 4px;
+		font-family: 'SF Mono', SFMono-Regular, ui-monospace, 'DejaVu Sans Mono', Menlo, Consolas, monospace;
+		white-space: pre;
+		font-size: 0.9rem;
+}
+
+p code, h1 code, h2 code, h3 code, h4 code, h5 code, h6 code {
+		display: inline;
+}
+
+img {
+		max-width: 100%;
+		height: auto;
+}
+
+@media (prefers-color-scheme: dark) {
+	body {
+		color: white;
+	}
+}

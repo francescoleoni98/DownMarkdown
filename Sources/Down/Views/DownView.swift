@@ -22,6 +22,12 @@ public typealias DownViewClosure = () -> Void
 
 open class DownView: WKWebView {
 
+	#if os(macOS)
+	open override func hitTest(_ point: NSPoint) -> NSView? {
+		return nil
+	}
+	#endif
+
     // MARK: - Life cycle
 
     /// Initializes a web view with the results of rendering a CommonMark Markdown string.
